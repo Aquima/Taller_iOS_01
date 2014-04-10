@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "MBProgressHUD.h"
+#import "WSData.h"
 @interface MainViewController ()
 {
     MBProgressHUD*progressView;
@@ -53,6 +54,7 @@
 */
 - (IBAction)getBenefits:(UIButton *)sender {
     [progressView show:YES];
+    [WSData getListBenefitWithNotification:@"endListBenefit"];
 }
 
 @end

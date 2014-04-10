@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface WSData : NSObject
-
++(void)getListBenefitWithNotification:(NSString*)nameNotification;
 @end
