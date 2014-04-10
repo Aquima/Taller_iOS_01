@@ -21,6 +21,12 @@
 		F43E644F18F676FF00A75555 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F43E643118F676FE00A75555 /* UIKit.framework */; };
 		F43E645718F676FF00A75555 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F43E645518F676FF00A75555 /* InfoPlist.strings */; };
 		F43E645918F676FF00A75555 /* ListadoDeBeneficiosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F43E645818F676FF00A75555 /* ListadoDeBeneficiosTests.m */; };
+		F43E646918F67C9500A75555 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F43E646818F67C9500A75555 /* MainViewController.m */; };
+		F43E646C18F67CB400A75555 /* ListaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F43E646B18F67CB400A75555 /* ListaTableViewController.m */; };
+		F43E646F18F67CCE00A75555 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F43E646E18F67CCE00A75555 /* DetailViewController.m */; };
+		F43E647218F67CFA00A75555 /* BenfitTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F43E647118F67CFA00A75555 /* BenfitTableViewCell.m */; };
+		F43E647518F67D1200A75555 /* Benefit.m in Sources */ = {isa = PBXBuildFile; fileRef = F43E647418F67D1200A75555 /* Benefit.m */; };
+		F43E647818F67D4500A75555 /* WSData.m in Sources */ = {isa = PBXBuildFile; fileRef = F43E647718F67D4500A75555 /* WSData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,18 @@
 		F43E645418F676FF00A75555 /* ListadoDeBeneficiosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ListadoDeBeneficiosTests-Info.plist"; sourceTree = "<group>"; };
 		F43E645618F676FF00A75555 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F43E645818F676FF00A75555 /* ListadoDeBeneficiosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListadoDeBeneficiosTests.m; sourceTree = "<group>"; };
+		F43E646718F67C9500A75555 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		F43E646818F67C9500A75555 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		F43E646A18F67CB400A75555 /* ListaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaTableViewController.h; sourceTree = "<group>"; };
+		F43E646B18F67CB400A75555 /* ListaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaTableViewController.m; sourceTree = "<group>"; };
+		F43E646D18F67CCE00A75555 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		F43E646E18F67CCE00A75555 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		F43E647018F67CFA00A75555 /* BenfitTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BenfitTableViewCell.h; sourceTree = "<group>"; };
+		F43E647118F67CFA00A75555 /* BenfitTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BenfitTableViewCell.m; sourceTree = "<group>"; };
+		F43E647318F67D1200A75555 /* Benefit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Benefit.h; sourceTree = "<group>"; };
+		F43E647418F67D1200A75555 /* Benefit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Benefit.m; sourceTree = "<group>"; };
+		F43E647618F67D4500A75555 /* WSData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSData.h; sourceTree = "<group>"; };
+		F43E647718F67D4500A75555 /* WSData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +130,7 @@
 		F43E643318F676FE00A75555 /* ListadoDeBeneficios */ = {
 			isa = PBXGroup;
 			children = (
+				F43E646218F67C4900A75555 /* Class */,
 				F43E643C18F676FE00A75555 /* AppDelegate.h */,
 				F43E643D18F676FE00A75555 /* AppDelegate.m */,
 				F43E643F18F676FE00A75555 /* Main.storyboard */,
@@ -150,6 +169,57 @@
 				F43E645518F676FF00A75555 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F43E646218F67C4900A75555 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				F43E646318F67C4900A75555 /* Modelo */,
+				F43E646418F67C4900A75555 /* View */,
+				F43E646518F67C4900A75555 /* ViewControllers */,
+				F43E646618F67C4900A75555 /* WS */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		F43E646318F67C4900A75555 /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+				F43E647318F67D1200A75555 /* Benefit.h */,
+				F43E647418F67D1200A75555 /* Benefit.m */,
+			);
+			path = Modelo;
+			sourceTree = "<group>";
+		};
+		F43E646418F67C4900A75555 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F43E647018F67CFA00A75555 /* BenfitTableViewCell.h */,
+				F43E647118F67CFA00A75555 /* BenfitTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F43E646518F67C4900A75555 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F43E646718F67C9500A75555 /* MainViewController.h */,
+				F43E646818F67C9500A75555 /* MainViewController.m */,
+				F43E646A18F67CB400A75555 /* ListaTableViewController.h */,
+				F43E646B18F67CB400A75555 /* ListaTableViewController.m */,
+				F43E646D18F67CCE00A75555 /* DetailViewController.h */,
+				F43E646E18F67CCE00A75555 /* DetailViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F43E646618F67C4900A75555 /* WS */ = {
+			isa = PBXGroup;
+			children = (
+				F43E647618F67D4500A75555 /* WSData.h */,
+				F43E647718F67D4500A75555 /* WSData.m */,
+			);
+			path = WS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,9 +319,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F43E646C18F67CB400A75555 /* ListaTableViewController.m in Sources */,
+				F43E647518F67D1200A75555 /* Benefit.m in Sources */,
 				F43E644418F676FE00A75555 /* ViewController.m in Sources */,
+				F43E647818F67D4500A75555 /* WSData.m in Sources */,
 				F43E643E18F676FE00A75555 /* AppDelegate.m in Sources */,
 				F43E643A18F676FE00A75555 /* main.m in Sources */,
+				F43E646918F67C9500A75555 /* MainViewController.m in Sources */,
+				F43E646F18F67CCE00A75555 /* DetailViewController.m in Sources */,
+				F43E647218F67CFA00A75555 /* BenfitTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
