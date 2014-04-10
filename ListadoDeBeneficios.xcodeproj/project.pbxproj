@@ -27,6 +27,8 @@
 		F43E647218F67CFA00A75555 /* BenfitTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F43E647118F67CFA00A75555 /* BenfitTableViewCell.m */; };
 		F43E647518F67D1200A75555 /* Benefit.m in Sources */ = {isa = PBXBuildFile; fileRef = F43E647418F67D1200A75555 /* Benefit.m */; };
 		F43E647818F67D4500A75555 /* WSData.m in Sources */ = {isa = PBXBuildFile; fileRef = F43E647718F67D4500A75555 /* WSData.m */; };
+		F43E648618F684B400A75555 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F43E648518F684B400A75555 /* MBProgressHUD.m */; };
+		F43E648A18F684EA00A75555 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = F43E648918F684EA00A75555 /* UIColor+Hex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,10 @@
 		F43E647418F67D1200A75555 /* Benefit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Benefit.m; sourceTree = "<group>"; };
 		F43E647618F67D4500A75555 /* WSData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSData.h; sourceTree = "<group>"; };
 		F43E647718F67D4500A75555 /* WSData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSData.m; sourceTree = "<group>"; };
+		F43E648418F684B400A75555 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		F43E648518F684B400A75555 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		F43E648818F684EA00A75555 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		F43E648918F684EA00A75555 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,8 @@
 		F43E643318F676FE00A75555 /* ListadoDeBeneficios */ = {
 			isa = PBXGroup;
 			children = (
+				F43E648718F684EA00A75555 /* Categories */,
+				F43E648218F684A300A75555 /* Dependence */,
 				F43E646218F67C4900A75555 /* Class */,
 				F43E643C18F676FE00A75555 /* AppDelegate.h */,
 				F43E643D18F676FE00A75555 /* AppDelegate.m */,
@@ -220,6 +228,32 @@
 				F43E647718F67D4500A75555 /* WSData.m */,
 			);
 			path = WS;
+			sourceTree = "<group>";
+		};
+		F43E648218F684A300A75555 /* Dependence */ = {
+			isa = PBXGroup;
+			children = (
+				F43E648318F684B400A75555 /* MBProgressHUD */,
+			);
+			path = Dependence;
+			sourceTree = "<group>";
+		};
+		F43E648318F684B400A75555 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				F43E648418F684B400A75555 /* MBProgressHUD.h */,
+				F43E648518F684B400A75555 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		F43E648718F684EA00A75555 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F43E648818F684EA00A75555 /* UIColor+Hex.h */,
+				F43E648918F684EA00A75555 /* UIColor+Hex.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +360,8 @@
 				F43E643E18F676FE00A75555 /* AppDelegate.m in Sources */,
 				F43E643A18F676FE00A75555 /* main.m in Sources */,
 				F43E646918F67C9500A75555 /* MainViewController.m in Sources */,
+				F43E648618F684B400A75555 /* MBProgressHUD.m in Sources */,
+				F43E648A18F684EA00A75555 /* UIColor+Hex.m in Sources */,
 				F43E646F18F67CCE00A75555 /* DetailViewController.m in Sources */,
 				F43E647218F67CFA00A75555 /* BenfitTableViewCell.m in Sources */,
 			);
@@ -532,6 +568,7 @@
 				F43E645E18F676FF00A75555 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F43E645F18F676FF00A75555 /* Build configuration list for PBXNativeTarget "ListadoDeBeneficiosTests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +577,7 @@
 				F43E646118F676FF00A75555 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

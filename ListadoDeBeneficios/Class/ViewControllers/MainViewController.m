@@ -7,8 +7,11 @@
 //
 
 #import "MainViewController.h"
-
+#import "MBProgressHUD.h"
 @interface MainViewController ()
+{
+    MBProgressHUD*progressView;
+}
 
 @end
 
@@ -26,6 +29,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    progressView=[[MBProgressHUD alloc] initWithView:self.navigationController.view];
+    [self.navigationController.view addSubview:progressView];
+    progressView.mode=MBProgressHUDModeIndeterminate;
     // Do any additional setup after loading the view.
 }
 
@@ -45,5 +51,8 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)getBenefits:(UIButton *)sender {
+    [progressView show:YES];
+}
 
 @end
