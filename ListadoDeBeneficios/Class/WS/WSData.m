@@ -10,6 +10,7 @@
 #define urlBase @"https://api.parse.com/1/"
 #define API_KEY @"wd3isSVXSDR82RbRUqbZtT6Sxc59DtJppCvkxxjS"
 #define REST_API_KEY @"yBidBFinbutOiwy7ZflZ0QPuk04mthur6eq6d75h"
+#import "Benefit.h"
 @implementation WSData
 
 +(void)getListBenefitWithNotification:(NSString*)nameNotification{
@@ -47,14 +48,26 @@
                                                                         //sabemos que es un dicionario
                                                                         NSDictionary *jsonDictionary = (NSDictionary *)jsonObject;
                                                                         NSLog(@"%@",jsonDictionary);
+                                                                        NSMutableArray*listBenefit=[[NSMutableArray alloc] init];
+                                                                        NSArray*results=(NSArray*)[jsonDictionary objectForKey:@"results"];
+                                                                        for (NSDictionary *object in results) {
+                                                                            Benefit*newBenefit=[[Benefit alloc] init];
+                                                                            [newBenefit loadWithDictionary:object];
+                                                                            [listBenefit addObject:newBenefit];
+                                                                        }
+                                                                        [[NSNotificationCenter defaultCenter] postNotificationName:nameNotification object:listBenefit];
                                                                     }
                                                                 }else{
                                                                     //mostramos un mensaje de error
+                                                                    UIAlertView*message=[[UIAlertView alloc] initWithTitle:@"Error" message:jsonError.description delegate:nil cancelButtonTitle:@"Aceptar" otherButtonTitles: nil];
+                                                                    [message show];
                                                                 }
 
 
                                                             }else{
                                                                 //mostramos un mensaje de error
+                                                                UIAlertView*message=[[UIAlertView alloc] initWithTitle:@"Error" message:@"No tiene  acceso a internet" delegate:nil cancelButtonTitle:@"Aceptar" otherButtonTitles: nil];
+                                                                [message show];
                                                             }
                                                             
                                                         }];

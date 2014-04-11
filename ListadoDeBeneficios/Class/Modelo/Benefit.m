@@ -9,5 +9,15 @@
 #import "Benefit.h"
 
 @implementation Benefit
-
+@synthesize createdAt,updatedAt;
+@synthesize name;
+@synthesize objectId;
+@synthesize descripcion;
+-(void)loadWithDictionary:(NSDictionary*)data
+{
+    name=[NSString stringWithFormat:@"%@",[data objectForKey:@"name"]];
+    descripcion=[NSString stringWithFormat:@"%@",[data objectForKey:@"description"]];
+    objectId=[NSString stringWithFormat:@"%@",[data objectForKey:@"objectId"]];
+#warning Raul Quispe: me falta inicializar las propiedades NSdate
+}
 @end

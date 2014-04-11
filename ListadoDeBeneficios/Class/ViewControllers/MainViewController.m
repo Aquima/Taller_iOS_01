@@ -54,7 +54,13 @@
 */
 - (IBAction)getBenefits:(UIButton *)sender {
     [progressView show:YES];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(endListBenefit:) name:@"endListBenefit" object:nil];
     [WSData getListBenefitWithNotification:@"endListBenefit"];
-}
 
+}
+-(void)endListBenefit:(NSNotification*)notification
+{
+    NSArray*listBenefit=(NSArray*)notification.object;
+    NSLog(@"numero de elementos:%lu ",(unsigned long)[listBenefit count]);
+}
 @end
